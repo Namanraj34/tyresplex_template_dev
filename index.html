@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- google font end -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- slider css start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- slider css end -->
+
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar fixed-top navbar-expand-md main-header">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="javascript:void(0);"><img
+                    src="https://cdn.tyreplex.net/themes/moonlight/images/TP-logo.png?tr=w-150,q-60" alt="logo img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="contactDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Car Tyres</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">MRF
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">CEAT
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Goodyear
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Apollo
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item"
+                                    href="javascript:void(0);">Bridgestone Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">JK
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Michelin
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">All Car
+                                    Tyres</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="contactDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Bike Tyres</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">MRF
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">CEAT
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Goodyear
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Apollo
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item"
+                                    href="javascript:void(0);">Bridgestone Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">JK
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Michelin
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">All Bike
+                                    Tyres</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="javascript:void(0);">Tyres Pressure</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="contactDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Commercial Tyres</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">All
+                                    Commercial Tyres</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="contactDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Accessories</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li class="nav-item"><a class="nav-link dropdown-item"
+                                    href="javascript:void(0);">Accessories</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item"
+                                    href="javascript:void(0);">Batteries</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Alloys
+                                    Wheels</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="contactDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Cashback
+                                    Offers</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Find Tyre
+                                    Deals</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Comapre
+                                    Tyres</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Are You A
+                                    Tyre Dealer</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Wheel
+                                    Balancing</a></li>
+                            <li class="nav-item"><a class="nav-link dropdown-item" href="javascript:void(0);">Whell
+                                    Alignment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sm-icons">
+                    <li><img width="26" height="26" src="https://img.icons8.com/windows/26/gender-neutral-user.png"
+                            alt="gender-neutral-user" /> Login</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar-placeholder"></div>
+    <!-- navbar end -->
+
+    <!-- services reviews start -->
+    <div class="container mt-3 services-main">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <h1 class="fs-5  fw-bold">SHREE HEMKUNT TYRES AND SERVICES <span class="fs-6 offer-text"><img width="16"
+                            height="16"
+                            src="https://img.icons8.com/fluency-systems-filled/16/4CA72C/security-checked.png"
+                            alt="security-checked" /> Verified</span>
+                </h1>
+
+                <div class="d-flex align-items-center mt-1">
+                    <span class="ratingNumber-bg me-2 mt-2">4.9</span>
+                    <span class="star  me-2">
+                        <img width="16" height="16" src="https://img.icons8.com/fluency/16/star--v1.png"
+                            alt="star--v1" />
+                        <img width="16" height="16" src="https://img.icons8.com/fluency/16/star--v1.png"
+                            alt="star--v1" />
+                        <img width="16" height="16" src="https://img.icons8.com/fluency/16/star--v1.png"
+                            alt="star--v1" />
+                        <img width="16" height="16" src="https://img.icons8.com/fluency/16/star--v1.png"
+                            alt="star--v1" />
+                        <img width="16" height="16" src="https://img.icons8.com/fluency/16/star--v1.png"
+                            alt="star--v1" />
+                    </span>
+                    <span class="border-bottom me-2">2278 Reviews</span>
+                    <button class="btn px-2 btn-light d-inline-flex rate-btn">Rate</button>
+                </div>
+                <div class="location mt-2">
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <img width="25" height="25"
+                                src="https://img.icons8.com/fluency-systems-regular/25/afaeae/marker--v1.png"
+                                alt="marker--v1" />
+                        </div>
+                        <span class="span-font">PLOT NUMBER-09 GROUND FLOOR CISF CAMPUS ROAD, AHINSA KHAND-02
+                            INDIRAPURAM, Ghaziabad,
+                            Uttar Pradesh, 201014</span>
+                    </div>
+
+                    <div class="d-flex mt-2">
+                        <div class="me-3">
+                            <img width="25" height="25" src="https://img.icons8.com/ios/25/787878/clock--v3.png"
+                                alt="clock--v3" />
+                        </div>
+                        <span class="timing span-font">Open - Monday to Sunday - 10:00AM to 8:00PM</span>
+                    </div>
+
+                    <a href="javascript:void(0);" class="btn btn-outline-theme mt-3 m-0 p-2 col-12">Get Directions</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div>
+                    <div class="owl-carousel mt-3 ">
+                        <div>
+                            <img src="https://lh3.googleusercontent.com/places/AAcXr8o52JCZ4eDqDhBAQRIDHcYnN1kNMCKBI27KOEuPvQk0C546Zftc9kpHLdW6kmlnbf1gGd7fSGfpctnLspNCfEpye7Rrmwrp094=s1600-w300"
+                                alt="slider 1">
+                        </div>
+                        <div>
+                            <img src="https://lh3.googleusercontent.com/places/AAcXr8o52JCZ4eDqDhBAQRIDHcYnN1kNMCKBI27KOEuPvQk0C546Zftc9kpHLdW6kmlnbf1gGd7fSGfpctnLspNCfEpye7Rrmwrp094=s1600-w300"
+                                alt="slider 2">
+                        </div>
+                        <div>
+                            <img src="https://lh3.googleusercontent.com/places/AAcXr8ryfQqAWHDmAPXAuK5o1Sk81OiWbLXHHNRm8OTBLFZE41-3arlK-Q7aMXjXp106o8p8Dca6OTnSTynW6ykkg86zy1-j4JRkpXI=s1600-w300"
+                                alt="slider 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    600: {
+                        items: 1,
+                        nav: false,
+                    },
+                    1000: {
+                        items: 3,
+                        nav: false,
+                        // loop:true
+                    },
+                },
+            });
+            $(".play").on("click", function () {
+                owl.trigger("play.owl.autoplay", [1000]);
+            });
+            $(".stop").on("click", function () {
+                owl.trigger("stop.owl.autoplay");
+            });
+        </script>
+
+        <div class="row mt-5">
+            <p class="fw-bold mb-2">
+                <span>2278</span> Google Reviews
+            </p>
+            <div class="owl-carousel">
+                <div class="card p-3">
+                    <p class="fw-bold mt-3 d-flex"><img
+                            src="https://lh3.googleusercontent.com/a/AATXAJxi1FTLTnIbF-wcCFLUqffCFFV07qiTPPBbLVaO=s128-c0x00000000-cc-rp-mo"
+                            alt="userIcon" class="userIcon me-2"> Rohit Bhati</p>
+                    <p class="card-para">Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very
+                        cool. Guide as per ur
+                        budget. Highly recommend</p>
+                </div>
+                <div class="card p-3">
+                    <p class="fw-bold mt-3 d-flex"><img
+                            src="https://lh3.googleusercontent.com/a/AATXAJxi1FTLTnIbF-wcCFLUqffCFFV07qiTPPBbLVaO=s128-c0x00000000-cc-rp-mo"
+                            alt="userIcon" class="userIcon me-2"> Rohit Bhati</p>
+                    <p class="card-para">Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very
+                        cool. Guide as per ur
+                        budget. Highly recommend</p>
+                </div>
+
+                <div class="card p-3">
+                    <p class="fw-bold mt-3 d-flex"><img
+                            src="https://lh3.googleusercontent.com/a/AATXAJxi1FTLTnIbF-wcCFLUqffCFFV07qiTPPBbLVaO=s128-c0x00000000-cc-rp-mo"
+                            alt="userIcon" class="userIcon me-2"> Rohit Bhati</p>
+                    <p class="card-para">Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very
+                        cool. Guide as per ur
+                        budget. Highly recommend</p>
+                </div>
+
+                <div class="card p-3">
+                    <p class="fw-bold mt-3 d-flex"><img
+                            src="https://lh3.googleusercontent.com/a/AATXAJxi1FTLTnIbF-wcCFLUqffCFFV07qiTPPBbLVaO=s128-c0x00000000-cc-rp-mo"
+                            alt="userIcon" class="userIcon me-2"> Rohit Bhati</p>
+                    <p class="card-para">Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very
+                        cool. Guide as per ur
+                        budget. Highly recommend</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                },
+                600: {
+                    items: 1,
+                    nav: false,
+                },
+                1000: {
+                    items: 4,
+                    nav: false,
+                    // loop:true
+                },
+            },
+        });
+        $(".play").on("click", function () {
+            owl.trigger("play.owl.autoplay", [1000]);
+        });
+        $(".stop").on("click", function () {
+            owl.trigger("stop.owl.autoplay");
+        });
+    </script>
+    <!-- services reviews end -->
+
+    <!-- deals in start -->
+    <div class="container mt-3 pt-3 deals-main">
+        <p class="fw-bold mb-2">
+            <span>Deals</span> In
+        </p>
+        <div class="owl-carousel">
+            <div class="card p-3 text-center">
+                <img class="equal" src="/assets/img/mrf_logo.png" alt="mrf_logo">
+                <span>MRF</span>
+            </div>
+            <div class="card p-3 text-center">
+                <img class="equal" src="/assets/img/bridgestone_logo.png" alt="bridgestone_logo">
+                <span>Bridgestone</span>
+            </div>
+            <div class="card p-3 text-center">
+                <img class="equal" src="/assets/img/ceat_logo.png" alt="ceat_logo">
+                <span>CEAT</span>
+            </div>
+            <div class="card p-3 text-center">
+                <img class="equal" src="/assets/img/jktyre_logo.png" alt="apollo_logo">
+                <span>JK Tyre</span>
+            </div>
+            <div class="card p-3 text-center">
+                <img class="equal" src="/assets/img/goodyear_logo.png" alt="goodyear_logo">
+                <span>GoodYear</span>
+            </div>
+            <div class="card p-3 text-center">
+                <img class="equal" src="/assets/img/apollo_logo.png" alt="apollo_logo">
+                <span>Apollo</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                },
+                600: {
+                    items: 1,
+                    nav: false,
+                },
+                1000: {
+                    items: 5,
+                    nav: false,
+                    loop: false
+                },
+            },
+        });
+        $(".play").on("click", function () {
+            owl.trigger("play.owl.autoplay", [1000]);
+        });
+        $(".stop").on("click", function () {
+            owl.trigger("stop.owl.autoplay");
+        });
+    </script>
+    <!-- deals in end -->
+
+    <!-- service offer deals start -->
+    <div class="container mt-3 pt-3 pb-3 deals-main">
+        <p class="fw-bold mb-2">
+            Services offered by this dealer
+        </p>
+
+        <div class="row">
+            <div class="col-6 col-lg-3 mb-3">
+                <div class="card p-3 text-center">
+                    <img class="service-img" src="https://cdn.tyreplex.net/images/wheel-alignment-bal.png?tr=w-100"
+                        alt="goodyear_logo">
+                    <span class="fw-bold mt-2">Wheel Balancing</span>
+                    <a href="javascript:void(0);" class="theme-btn mt-2">Book Now</a>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+                <div class="card p-3 text-center">
+                    <img class="service-img" src="https://cdn.tyreplex.net/images/wheel-alignment.png?tr=w-100"
+                        alt="goodyear_logo">
+                    <span class="fw-bold mt-2">Wheel Alignment</span>
+                    <a href="javascript:void(0);" class="theme-btn mt-2">Book Now</a>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3"></div>
+            <div class="col-lg-3 mb-3"></div>
+        </div>
+    </div>
+    <!-- service offer deals end -->
+
+    <!-- tyre sold by dealer start-->
+
+
+
+    <div class="container mt-3 pt-3 pb-3">
+        <!-- Search Input -->
+        <div class="row mb-3">
+
+        </div>
+
+        <div class="d-flex justify-content-between mb-2">
+            <p class="fw-bold ">
+                Tyres Sold by this Dealer
+            </p>
+            <div><input type="text" id="searchInput" class="form-control" placeholder="Search by name">
+            </div>
+        </div>
+
+        <div class="row" id="cardContainer">
+            <!-- Card 1 -->
+            <div class="col-lg-3 mb-3">
+                <div class="card p-3 sold_tyre_main">
+                    <div class="d-flex">
+                        <div>
+                            <img class="tyre_deal_img mb-2" src="assets/img/apollo_logo.png" alt="apollo_logo">
+                            <div>AMAZER 4G LIFE</div>
+                            <div class="timing mt-3">145/80 R12</div>
+                            <div class="d-flex mt-3">
+                                <span class="ratingNumber-bg1 me-2 "><img width="16" height="16"
+                                        src="https://img.icons8.com/ios-filled/16/FFFFFF/star--v1.png" alt="star--v1"
+                                        class="me-1" />
+                                    4</span><small>320 Reviews</small>
+                            </div>
+                            <div class="mt-2">₹ 3,618</div>
+                            <div class="offer-text mt-3">Offer available</div>
+
+                            <div class="tube_time mt-2">Tubeless</div>
+                        </div>
+                        <div>
+                            <span class="warranty-tag"><img width="16" height="16"
+                                    src="https://img.icons8.com/material-rounded/16/security-checked.png"
+                                    alt="security-checked" /> 5 Year Warranty</span>
+                            <img class="warranty_img"
+                                src="https://cdn.tyreplex.net/uploads/images/tyre_model/original/apollo/amazer-4g-life/img_main.png?v=2385909&amp;tr=w-178,q-78,q-60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-3 mb-3">
+                <div class="card p-3 sold_tyre_main">
+                    <div class="d-flex">
+                        <div>
+                            <img class="tyre_deal_img mb-2" src="assets/img/apollo_logo.png" alt="apollo_logo">
+                            <div>AMAZER 4G LIFE</div>
+                            <div class="timing mt-3">145/80 R12</div>
+                            <div class="d-flex mt-3">
+                                <span class="ratingNumber-bg1 me-2 "><img width="16" height="16"
+                                        src="https://img.icons8.com/ios-filled/16/FFFFFF/star--v1.png" alt="star--v1"
+                                        class="me-1" />
+                                    4</span><small>320 Reviews</small>
+                            </div>
+                            <div class="mt-2">₹ 3,518</div>
+                            <div class="offer-text mt-3">Offer available</div>
+
+                            <div class="tube_time mt-2">Tubeless</div>
+                        </div>
+                        <div>
+                            <span class="warranty-tag"><img width="16" height="16"
+                                    src="https://img.icons8.com/material-rounded/16/security-checked.png"
+                                    alt="security-checked" /> 5 Year Warranty</span>
+                            <img class="warranty_img"
+                                src="https://cdn.tyreplex.net/uploads/images/tyre_model/original/apollo/amazer-4g-life/img_main.png?v=2385909&amp;tr=w-178,q-78,q-60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-3 mb-3">
+                <div class="card p-3 sold_tyre_main">
+                    <div class="d-flex">
+                        <div>
+                            <img class="tyre_deal_img mb-2" src="assets/img/mrf_logo.png" alt="apollo_logo">
+                            <div>MRF 4G LIFE</div>
+                            <div class="timing mt-3">145/80 R12</div>
+                            <div class="d-flex mt-3">
+                                <span class="ratingNumber-bg1 me-2 "><img width="16" height="16"
+                                        src="https://img.icons8.com/ios-filled/16/FFFFFF/star--v1.png" alt="star--v1"
+                                        class="me-1" />
+                                    4</span><small>320 Reviews</small>
+                            </div>
+                            <div class="mt-2">₹ 3,458</div>
+                            <div class="offer-text mt-3">Offer available</div>
+
+                            <div class="tube_time mt-2">Tubeless</div>
+                        </div>
+                        <div>
+                            <span class="warranty-tag"><img width="16" height="16"
+                                    src="https://img.icons8.com/material-rounded/16/security-checked.png"
+                                    alt="security-checked" /> 5 Year Warranty</span>
+                            <img class="warranty_img"
+                                src="https://cdn.tyreplex.net/uploads/images/tyre_model/original/apollo/amazer-4g-life/img_main.png?v=2385909&amp;tr=w-178,q-78,q-60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-3 mb-3">
+                <div class="card p-3 sold_tyre_main">
+                    <div class="d-flex">
+                        <div>
+                            <img class="tyre_deal_img mb-2" src="assets/img/apollo_logo.png" alt="apollo_logo">
+                            <div>MRF 4G LIFE</div>
+                            <div class="timing mt-3">145/80 R12</div>
+                            <div class="d-flex mt-3">
+                                <span class="ratingNumber-bg1 me-2 "><img width="16" height="16"
+                                        src="https://img.icons8.com/ios-filled/16/FFFFFF/star--v1.png" alt="star--v1"
+                                        class="me-1" />
+                                    4</span><small>320 Reviews</small>
+                            </div>
+                            <div class="mt-2">₹ 3,718</div>
+                            <div class="offer-text mt-3">Offer available</div>
+
+                            <div class="tube_time mt-2">Tubeless</div>
+                        </div>
+                        <div>
+                            <span class="warranty-tag"><img width="16" height="16"
+                                    src="https://img.icons8.com/material-rounded/16/security-checked.png"
+                                    alt="security-checked" /> 5 Year Warranty</span>
+                            <img class="warranty_img"
+                                src="https://cdn.tyreplex.net/uploads/images/tyre_model/original/apollo/amazer-4g-life/img_main.png?v=2385909&amp;tr=w-178,q-78,q-60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-lg-3 mb-3">
+                <div class="card p-3 sold_tyre_main">
+                    <div class="d-flex">
+                        <div>
+                            <img class="tyre_deal_img mb-2" src="assets/img/apollo_logo.png" alt="apollo_logo">
+                            <div>AMAZER 4G LIFE</div>
+                            <div class="timing mt-3">145/80 R12</div>
+                            <div class="d-flex mt-3">
+                                <span class="ratingNumber-bg1 me-2 "><img width="16" height="16"
+                                        src="https://img.icons8.com/ios-filled/16/FFFFFF/star--v1.png" alt="star--v1"
+                                        class="me-1" />
+                                    4</span><small>320 Reviews</small>
+                            </div>
+                            <div class="mt-2">₹ 3,618</div>
+                            <div class="offer-text mt-3">Offer available</div>
+
+                            <div class="tube_time mt-2">Tubeless</div>
+                        </div>
+                        <div>
+                            <span class="warranty-tag"><img width="16" height="16"
+                                    src="https://img.icons8.com/material-rounded/16/security-checked.png"
+                                    alt="security-checked" /> 5 Year Warranty</span>
+                            <img class="warranty_img"
+                                src="https://cdn.tyreplex.net/uploads/images/tyre_model/original/apollo/amazer-4g-life/img_main.png?v=2385909&amp;tr=w-178,q-78,q-60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-3 mb-3">
+                <div class="card p-3 sold_tyre_main">
+                    <div class="d-flex">
+                        <div>
+                            <img class="tyre_deal_img mb-2" src="assets/img/apollo_logo.png" alt="apollo_logo">
+                            <div>AMAZER 4G LIFE</div>
+                            <div class="timing mt-3">145/80 R12</div>
+                            <div class="d-flex mt-3">
+                                <span class="ratingNumber-bg1 me-2 "><img width="16" height="16"
+                                        src="https://img.icons8.com/ios-filled/16/FFFFFF/star--v1.png" alt="star--v1"
+                                        class="me-1" />
+                                    4</span><small>320 Reviews</small>
+                            </div>
+                            <div class="mt-2">₹ 3,518</div>
+                            <div class="offer-text mt-3">Offer available</div>
+
+                            <div class="tube_time mt-2">Tubeless</div>
+                        </div>
+                        <div>
+                            <span class="warranty-tag"><img width="16" height="16"
+                                    src="https://img.icons8.com/material-rounded/16/security-checked.png"
+                                    alt="security-checked" /> 5 Year Warranty</span>
+                            <img class="warranty_img"
+                                src="https://cdn.tyreplex.net/uploads/images/tyre_model/original/apollo/amazer-4g-life/img_main.png?v=2385909&amp;tr=w-178,q-78,q-60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-lg-3 mb-3">
+                <div class="card p-3 sold_tyre_main">
+                    <div class="d-flex">
+                        <div>
+                            <img class="tyre_deal_img mb-2" src="assets/img/mrf_logo.png" alt="apollo_logo">
+                            <div>MRF 4G LIFE</div>
+                            <div class="timing mt-3">145/80 R12</div>
+                            <div class="d-flex mt-3">
+                                <span class="ratingNumber-bg1 me-2 "><img width="16" height="16"
+                                        src="https://img.icons8.com/ios-filled/16/FFFFFF/star--v1.png" alt="star--v1"
+                                        class="me-1" />
+                                    4</span><small>320 Reviews</small>
+                            </div>
+                            <div class="mt-2">₹ 3,458</div>
+                            <div class="offer-text mt-3">Offer available</div>
+
+                            <div class="tube_time mt-2">Tubeless</div>
+                        </div>
+                        <div>
+                            <span class="warranty-tag"><img width="16" height="16"
+                                    src="https://img.icons8.com/material-rounded/16/security-checked.png"
+                                    alt="security-checked" /> 5 Year Warranty</span>
+                            <img class="warranty_img"
+                                src="https://cdn.tyreplex.net/uploads/images/tyre_model/original/apollo/amazer-4g-life/img_main.png?v=2385909&amp;tr=w-178,q-78,q-60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-lg-3 mb-3">
+                <div class="card p-3 sold_tyre_main">
+                    <div class="d-flex">
+                        <div>
+                            <img class="tyre_deal_img mb-2" src="assets/img/apollo_logo.png" alt="apollo_logo">
+                            <div>MRF 4G LIFE</div>
+                            <div class="timing mt-3">145/80 R12</div>
+                            <div class="d-flex mt-3">
+                                <span class="ratingNumber-bg1 me-2 "><img width="16" height="16"
+                                        src="https://img.icons8.com/ios-filled/16/FFFFFF/star--v1.png" alt="star--v1"
+                                        class="me-1" />
+                                    4</span><small>320 Reviews</small>
+                            </div>
+                            <div class="mt-2">₹ 3,718</div>
+                            <div class="offer-text mt-3">Offer available</div>
+
+                            <div class="tube_time mt-2">Tubeless</div>
+                        </div>
+                        <div>
+                            <span class="warranty-tag"><img width="16" height="16"
+                                    src="https://img.icons8.com/material-rounded/16/security-checked.png"
+                                    alt="security-checked" /> 5 Year Warranty</span>
+                            <img class="warranty_img"
+                                src="https://cdn.tyreplex.net/uploads/images/tyre_model/original/apollo/amazer-4g-life/img_main.png?v=2385909&amp;tr=w-178,q-78,q-60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const cardContainer = document.getElementById('cardContainer');
+
+            searchInput.addEventListener('input', function () {
+                const searchValue = searchInput.value.toLowerCase();
+
+                // Get all cards
+                const cards = cardContainer.getElementsByClassName('card');
+
+                // Loop through cards and hide those that don't match the search query
+                Array.from(cards).forEach(card => {
+                    const name = card.querySelector('div:nth-child(1) > div').textContent.toLowerCase();
+
+                    if (name.includes(searchValue)) {
+                        card.parentElement.style.display = '';
+                    } else {
+                        card.parentElement.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- tyre sold by dealer end -->
+
+    <!-- Payment Mode start -->
+    <div class="container mt-3 pt-3 pb-3 deals-main">
+        <p class="fw-bold mb-2">
+            Payment Mode
+        </p>
+
+        <div class="row mt-3">
+            <div class="col-12 col-lg-6">
+                <div class="payment-main">
+                    <ul>
+                        <li>
+                            <img class="me-2" width="18" height="18"
+                                src="https://img.icons8.com/color/18/checkmark--v1.png" alt="checkmark--v1" /> Deposite
+                            of Account
+                        </li>
+                        <li>
+                            <img class="me-2" width="18" height="18"
+                                src="https://img.icons8.com/color/18/checkmark--v1.png" alt="checkmark--v1" /> Credit
+                            Card/Debit Card
+                        </li>
+                        <li>
+                            <img class="me-2" width="18" height="18"
+                                src="https://img.icons8.com/color/18/checkmark--v1.png" alt="checkmark--v1" /> Wallets
+                            (PayTM/PhonePe/Amazon etc.)
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img class="me-2" width="18" height="18"
+                                src="https://img.icons8.com/color/18/checkmark--v1.png" alt="checkmark--v1" /> Net
+                            Banking
+                        </li>
+                        <li>
+                            <img class="me-2" width="18" height="18"
+                                src="https://img.icons8.com/color/18/checkmark--v1.png" alt="checkmark--v1" /> UPI
+                        </li>
+
+                    </ul>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Payment Mode end -->
+
+    <!-- About us start -->
+    <div class="container mt-3 pt-3 pb-3 about_us">
+
+        <div class="d-block d-sm-none">
+            <p class="fw-bold mb-2">
+                Have a question about Tyres?
+            </p>
+            <small>Get an answer in 24 hours from our experts.</small>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 col-lg-6">
+                <div class="d-none d-sm-block">
+                    <p class="fw-bold mb-2">
+                        Have a question about Tyres?
+                    </p>
+                    <small>Get an answer in 24 hours from our experts.</small>
+                </div>
+                <form action="submit">
+                    <input placeholder="Ask or search your question" name="ask_Question"
+                        class="form-control scrollbar-near-moon askQuestion_des mb-2 mt-2">
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 about_img_main">
+                <img class="img-fluid lazy" width="70" height="70"
+                    src="https://cdn.tyreplex.net/themes/moonlight/images/haveQuestion-bg.png?v=600&amp;tr=q-60"
+                    alt="Have a Question" data-pagespeed-url-hash="2334455169"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            </div>
+        </div>
+    </div>
+    <!-- About us end -->
+
+    <!-- footer start -->
+    <div class="container mt-3 pt-3 pb-3 footer_main">
+        <footer>
+            <div class="row">
+                <div class="col-12 col-lg-3">
+
+                    <div class="p-3 text-center">
+                        <img class="footer-img"
+                            src="https://cdn.tyreplex.net/themes/moonlight/images/TP-logo-mbl.png?tr=w-150,q-77&v=512"
+                            alt="footer logo">
+                        <div class="footer-img mt-3">
+                            <span><img width="25" height="25" src="https://img.icons8.com/ios/25/facebook-f.png"
+                                    alt="facebook-f" /></span>
+                            <span><img width="25" height="25" src="https://img.icons8.com/ios/25/instagram-new--v1.png"
+                                    alt="instagram-new--v1" /></span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="footer-links footer-widget footer-right col-md-8 col-12 col-sm-9 ms-md-auto ms-sm-auto footer_ul">
+                    <div class="row">
+                        <div class="col-lg-4 col-12">
+                            <ul>
+                                <li>Who We Are</li>
+                                <li>Are you a Tyre Dealer?</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <ul>
+                                <li>Privacy Policy</li>
+                                <li>Terms of use</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <ul>
+                                <li>Contact Us</li>
+                                <li>Career</li>
+                                <li>Shipping & Return Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <hr>
+        <div class="text-center">
+            <small>©2024 TyrePlex Technologies & Commerce Pvt. Ltd. All Rights Reserved.</small>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
